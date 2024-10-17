@@ -11,7 +11,7 @@ struct MarsRoverPhotosResponse: Decodable {
     let photos: [MarsRoverPhoto]
 }
 
-struct MarsRoverPhoto: Decodable {
+struct MarsRoverPhoto: Decodable, Identifiable {
     let id: Int
     let imgSrc: String
     let earthDate: String
