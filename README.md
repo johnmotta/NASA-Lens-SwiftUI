@@ -4,7 +4,8 @@ NASA Lens é um aplicativo iOS desenvolvido em SwiftUI que utiliza a API da NASA
 
 | Fotos do dia | Fotos de Marte | Detalhes de Marte | Asteroides próximos da Terra |
 |:-------------------------:|:-----------------:|:----------------:|:-------------:|
-| <img src="https://i.imgur.com/CgPMc0f.png" width="200"/> | <img src="https://i.imgur.com/wlkc5ND.png" width="200"/> | <img src="https://i.imgur.com/yDA46Xu.png" width="200"/> | <img src="https://i.imgur.com/2vbCegn.png" width="200"/> |
+| <img src="https://i.imgur.com/4oy2yMY.png" width="200"/> | <img src="https://i.imgur.com/wlkc5ND.png" width="200"/> | <img src="https://i.imgur.com/yDA46Xu.png" width="200"/> | <img src="https://i.imgur.com/2vbCegn.png" width="200"/> |
+
 
 ## Funcionalidades
 
