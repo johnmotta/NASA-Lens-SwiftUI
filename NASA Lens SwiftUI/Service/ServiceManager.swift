@@ -17,7 +17,7 @@ class ServiceManager: NEOServiceProtocol {
     static let shared = ServiceManager()
     
     func fetchLoadAstronomyPictures(completion: @escaping (Result<Apod, NetworkError>) -> Void) {
-        let urlString = "https://api.nasa.gov/planetary/apod?api_key=\(Constants.API)"
+        let urlString = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
         
         guard let url = URL(string: urlString) else {
             completion(.failure(.invalidURL(urlString)))
@@ -48,7 +48,7 @@ class ServiceManager: NEOServiceProtocol {
     }
     
     func fetchData(completion: @escaping (Result<[MarsRoverPhoto], NetworkError>) -> Void) {
-        let urlString = "\(Constants.baseURL)mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=\(Constants.API)"
+        let urlString = "\(Constants.baseURL)mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY"
         
         guard let url = URL(string: urlString) else {
             completion(.failure(.invalidURL(urlString)))
@@ -81,7 +81,7 @@ class ServiceManager: NEOServiceProtocol {
         
     func fetchNEOData(startDate: String, endDate: String, completion: @escaping (Result<NEOResponse, NetworkError>) -> Void) {
         let baseURL = "https://api.nasa.gov/neo/rest/v1/feed"
-        let apiKey = Constants.API
+        let apiKey = "DEMO_KEY"
         guard var urlComponents = URLComponents(string: baseURL) else {
             completion(.failure(.invalidURL(baseURL)))
             return
